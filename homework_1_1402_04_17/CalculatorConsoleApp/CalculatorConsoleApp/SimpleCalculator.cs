@@ -8,6 +8,12 @@ namespace CalculatorConsoleApp
 {
     public static class SimpleCalculator
     {
+        private static double piNum = 3.14;
+
+        public static double AddToPi(double entry)
+        {
+            return piNum + entry;
+        }
         public static double Add(double x, double y) 
         {
             return x + y;
