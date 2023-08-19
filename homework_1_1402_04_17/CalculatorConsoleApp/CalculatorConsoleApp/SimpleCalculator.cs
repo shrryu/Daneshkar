@@ -31,7 +31,18 @@ namespace CalculatorConsoleApp
 
         public static double Divide(double x, double y)
         {
-            return x / y;
+            // returning zero is just a business logic; we decide what to return in such situations.
+            return (y != 0) ?  x / y : 0;
+        }
+
+        public static double Square(double x)
+        {
+            if(x < 0)
+            {
+                throw new ArgumentException("Square only works for positive numbers", "x");
+            }
+
+            return Math.Sqrt(x);
         }
     }
 }
