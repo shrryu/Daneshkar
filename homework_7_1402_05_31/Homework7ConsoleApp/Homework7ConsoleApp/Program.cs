@@ -1,6 +1,6 @@
 ﻿namespace Homework7ConsoleApp
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -35,7 +35,6 @@
 
             var wordPatternResult = Helper.WordPattern(pattern, str);
             Console.WriteLine($"is pattern matched? {wordPatternResult}");
-            Console.WriteLine($"is 29 prime? {Helper.IsPrime(29)}");
 
         }
     }

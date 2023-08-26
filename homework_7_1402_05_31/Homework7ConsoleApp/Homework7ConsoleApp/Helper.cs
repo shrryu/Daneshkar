@@ -7,7 +7,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Homework7ConsoleApp
 {
-    internal class Helper
+    public class Helper
     {
         public static bool IsAnagram(string original, string changed)
         {
